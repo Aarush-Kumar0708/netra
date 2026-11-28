@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETRA</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -25,11 +28,34 @@
         <div class="header-right">
             <span class="online-dot"></span>
             <span>SYSTEM ONLINE</span>
-            <b id="clock">--:--:--</b>
+            <strong id="clock">--:--:--</strong>
             <button id="dispatch-open">+ Dispatch Mission</button>
-            
         </div>
-
     </header>
+    <!--Main Dashboard-->
+    <main class="page">
+        <section class="rstatus-grid">
+            <article class="rstatus-card">
+                <span>ROVER ONLINE</span>
+                <h2 id="online-count">4 / 6</h2>
+                <p>Active rover units</p>
+            </article>
+            <article class="rstatus-card">
+                <span>AVERAGE BATTERY</span>
+                <h2 id="average-battery">50%</h2>
+                <p>Fleet battery level</p>
+            </article>
+            <article class="rstatus-card">
+                <span>OPEN ALERTS</span>
+                <h2 id="alert-count">0</h2>
+                <p>Requires attention</p>
+            </article>
+            <article class="rstatus-card">
+                <span>DISTANCE TODAY</span>
+                <h2 id="distance">20.3 km</h2>
+                <p>Total simulated distance</p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
